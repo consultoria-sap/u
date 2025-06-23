@@ -2,7 +2,9 @@
 title: JulianCAB 
 tags: perfil
 permalink: /juliancab/
-layout: page
+layout: usuario
+username: juliancab
+datafile: juliancab
 ---
 
-Aquí las estadísticas
+.
