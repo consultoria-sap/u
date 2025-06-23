@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+{% assign user_data = site.data[page.datafile] %}
+{% assign user = user_data.users[0] %}
+{% assign stats = user_data.user_summary %}
+
+<div class="user-profile" style="max-width: 400px; margin: 2rem auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 2rem;">
+  <div style="text-align: center;">
+    <img
+      src="{{ user.avatar_template | replace: '{size}', '120' }}"
+      alt="Avatar de {{ user.name | default: user.username }}"
+      class="user-avatar"
+      style="border-radius: 50%; border: 2px solid #eee; width: 120px; height: 120px; object-fit: cover; background: #f9f9f9;"
+    >
+    <h1 style="margin: 1rem 0 0.25rem; font-size: 1.6rem;">{{ user.name | default: user.username }}</h1>
+    <div style="color: #888; font-size: 1rem;">@{{ user.username }}</div>
+    {% if user.flair_name %}
+      <span style="display: inline-block; margin: 0.5rem 0; padding: 0.25em 0.75em; background: #{{ user.flair_color }}10; color: #{{ user.flair_color }}; border-radius: 999px; font-size: 0.95rem;">
+        <i class="icon-{{ user.flair_url }}"></i> {{ user.flair_name }}
+      </span>
+    {% endif %}
+  </div>
+
+  <hr style="margin: 2rem 0 1.5rem;">
+
+  <div class="user-stats" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2rem;">{{ stats.likes_given }}</div>
+      <div style="color: #888;">Likes dados</div>
+    </div>
+    <div>
+      <div style="font-weight: bold; font-size: 1.2rem;">{{ stats.likes_received }}</div>
+      <div style="color: #888;">Likes recibidos</div>
+    </div>
+    <div>
+      <div style="font-weight: bold; font-size: 1.2rem;">{{ stats.topics_entered }}</div>
+      <div style="color: #888;">Temas visitados</div>
+    </div>
+    <div>
+      <div style="font-weight: bold; font-size: 1.2rem;">{{ stats.posts_read_count }}</div>
+      <div style="color: #888;">Posts leídos</div>
+    </div>
+    <div>
+      <div style="font-weight: bold; font-size: 1.2rem;">{{ stats.days_visited }}</div>
+      <div style="color: #888;">Días visitados</div>
+    </div>
+    <div>
+      <div style="font-weight: bold; font-size: 1.2rem;">{{ stats.topic_count }}</div>
+      <div style="color: #888;">Temas creados</div>
+    </div>
+    <div>
+      <div style="font-weight: bold; font-size: 1.2rem;">{{ stats.post_count }}</div>
+      <div style="color: #888;">Posts escritos</div>
+    </div>
+    <div>
+      <div style="font-weight: bold; font-size: 1.2rem;">{{ stats.solved_count }}</div>
+      <div style="color: #888;">Soluciones dadas</div>
+    </div>
+  </div>
+</div>
