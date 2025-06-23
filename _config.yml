@@ -38,6 +38,9 @@ kramdown:
   footnote_nr       : 1
   show_warnings     : false
 
+exclude:
+  - README.md  
+
 # ini - Los siguientes no pueden cambiarse -ini
 lsi: false
 safe: true
