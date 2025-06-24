@@ -39,7 +39,7 @@ layout: default
 
   <hr style="margin: 2rem 0 1.5rem;">
   
-  Más información en <a href="{% if user.linkedin contains 'http' %}{{ user.linkedin }}{% else %}https://www.linkedin.com{{ user.linkedin }}{% endif %}" target="_blank" title="Linkein de {{ user.name | default: user.username }}" >🤝 Linkedin de {{ user.name | default: user.username }}</a>
+  Más información en <a href="{% if page.linkedin contains 'http' %}{{ page.linkedin }}{% else %}https://www.linkedin.com{{ page.linkedin }}{% endif %}" target="_blank" title="Linkein de {{ user.name | default: user.username }}" >🤝 Linkedin de {{ user.name | default: user.username }}</a>
   
   <hr style="margin: 2rem 0 1.5rem;">
 
