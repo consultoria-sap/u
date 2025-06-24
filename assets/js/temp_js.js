@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const TEMP_DIR = path.join(__dirname, '../../temp');
-const DATA_DIR = path.join(__dirname, '../../_data');
+const TEMP_DIR = path.resolve(process.cwd(), 'temp');
+const DATA_DIR = path.resolve(process.cwd(), '_data');
 
 // Llaves a conservar:
 const KEYS_TO_KEEP = ["badges", "users", "user_summary"];
