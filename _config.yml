@@ -41,6 +41,7 @@ kramdown:
 exclude:
   - README.md
   - /temp/readme.md
+  - /_data/readme.md
 
 # ini - Los siguientes no pueden cambiarse -ini
 lsi: false
