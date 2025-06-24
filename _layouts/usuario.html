@@ -9,7 +9,7 @@ layout: default
   {% assign user = user_data.users[0] %}
 {% endif %}
 {% assign stats = user_data.user_summary %}
-{% assign badges = user_data.badges %}
+
 
 <div class="user-profile" style="max-width: 400px; margin: 2rem auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 2rem;">
   <div style="text-align: center;">
@@ -27,7 +27,8 @@ layout: default
       </span>
     {% endif %}
 
-    <!--badges ini-->
+{% comment %}
+    {% assign badges = user_data.badges %}
       <ul class="user-badges">
         {% for badge in badges %}
           <li style="display: flex; align-items: center; margin-bottom: 0.3em;">
@@ -39,7 +40,7 @@ layout: default
           </li>
         {% endfor %}
         </ul>
-    <!--badges fin-->
+{% endcomment %}
     
   </div>
 
