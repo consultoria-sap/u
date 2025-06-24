@@ -3,8 +3,13 @@ layout: default
 ---
 
 {% assign user_data = site.data[page.datafile] %}
-{% assign user = user_data.users[0] %}
+{% if user_data.user %}
+  {% assign user = user_data.user %}
+{% elsif user_data.users %}
+  {% assign user = user_data.users[0] %}
+{% endif %}
 {% assign stats = user_data.user_summary %}
+{% assign badges = user_data.badges %}
 
 <div class="user-profile" style="max-width: 400px; margin: 2rem auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 2rem;">
   <div style="text-align: center;">
@@ -21,6 +26,22 @@ layout: default
         <i class="icon-{{ user.flair_url }}"></i> {{ user.flair_name }}
       </span>
     {% endif %}
+
+    <!--badges ini-->
+      <ul class="user-badges">
+        {% for badge in badges %}
+          <li style="display: flex; align-items: center; margin-bottom: 0.3em;">
+            <span class="badge-emoji" style="font-size: 1.3em; margin-right: 0.5em;">
+              {% capture icon_emoji %}:{{ badge.icon }}:{% endcapture %}
+              {{ icon_emoji | markdownify | strip_newlines }}
+            </span>
+            <span class="badge-name" style="font-weight: 600;">{{ badge.name }}</span>
+            <span class="badge-count" style="color: #999; margin-left: 0.5em;">×{{ badge.grant_count }}</span>
+          </li>
+        {% endfor %}
+        </ul>
+    <!--badges fin-->
+    
   </div>
 
   <hr style="margin: 2rem 0 1.5rem;">
