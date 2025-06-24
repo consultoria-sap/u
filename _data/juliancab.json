@@ -132,10 +132,109 @@
     "recent_time_read": 7916,
     "solved_count": 202
   },
-  "post": {
-    "id": 65933,
+  "topic": {
+    "id": 16686,
+    "title": "JULIAN CAB - Consultor y Desarrollador SBO",
+    "fancy_title": "JULIAN CAB - Consultor y Desarrollador SBO",
     "posts_count": 10,
-    "created_at": "2017-06-27T14:19:03.305Z",
-    "reply_count": 0
+    "created_at": "2017-06-27T14:19:03.233Z",
+    "views": 655,
+    "reply_count": 2,
+    "like_count": 5,
+    "last_posted_at": "2018-11-02T01:53:08.300Z",
+    "slug": "julian-cab-consultor-y-desarrollador-sbo",
+    "word_count": 461,
+    "post": {
+      "id": 65933,
+      "name": "Julian Cab Canul",
+      "username": "juliancab",
+      "avatar_template": "/user_avatar/foros.consultoria-sap.com/juliancab/144/23251_2.png",
+      "created_at": "2017-06-27T14:19:03.305Z",
+      "cooked": "<p>Mi nombre es Julian Cab Canul, soy consultor funcional/tecnico y desarrollador de SAP Business One, soy del país de México, me da gusto saber que existen aun foros especializados al tema de B1, actualmente soy FREELANCE y tengo mas de 10 años de experiencia con SAP Business One, he participado en implementaciones y desarrollo de addones. He participado en varios foros porque me gusta compartir mi experiencia con las personas que están nuevas en el tema de ERP SAP Business One.</p>\n<p>SALUDOS A TODOS.</p>\n<hr>\n<p>Nombre: JULIAN CAB CANUL<br>\nCiudad - País: MERIDA, YUCATAN, MÉXICO<br>\nÁrea de SAP (elige una): SAP B1<br>\nTienes experiencia en: SBO, CRYSTAL REPORTS, SQL, HANA<br>\nÚltimo rol o tarea laboral: FREELANCE<br>\nCómo conociste Consultoria-SAP: POR CASUALIDAD NAVEGANDO EN INTERNET<br>\nObjetivos de pertenecer a la comunidad: ASESORÁA Y APOYO</p>",
+      "post_number": 1,
+      "post_type": 1,
+      "posts_count": 10,
+      "updated_at": "2017-06-27T14:19:03.305Z",
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "incoming_link_count": 20,
+      "reads": 33,
+      "readers_count": 32,
+      "score": 166.6,
+      "yours": false,
+      "topic_id": 16686,
+      "topic_slug": "julian-cab-consultor-y-desarrollador-sbo",
+      "display_username": "Julian Cab Canul",
+      "primary_group_name": null,
+      "flair_name": "Servicios",
+      "flair_url": "briefcase",
+      "flair_bg_color": "",
+      "flair_color": "8e6500",
+      "flair_group_id": 61,
+      "badges_granted": [],
+      "version": 1,
+      "can_edit": true,
+      "can_delete": false,
+      "can_recover": false,
+      "can_see_hidden_post": true,
+      "can_wiki": true,
+      "read": true,
+      "user_title": "Experto",
+      "title_is_group": false,
+      "bookmarked": false,
+      "actions_summary": [
+        {
+          "id": 2,
+          "count": 4,
+          "can_act": true
+        },
+        {
+          "id": 6,
+          "can_act": true
+        },
+        {
+          "id": 3,
+          "can_act": true
+        },
+        {
+          "id": 4,
+          "can_act": true
+        },
+        {
+          "id": 8,
+          "can_act": true
+        },
+        {
+          "id": 10,
+          "can_act": true
+        },
+        {
+          "id": 7,
+          "can_act": true
+        }
+      ],
+      "moderator": false,
+      "admin": false,
+      "staff": false,
+      "user_id": 6866,
+      "hidden": false,
+      "trust_level": 2,
+      "deleted_at": null,
+      "user_deleted": false,
+      "edit_reason": null,
+      "can_view_edit_history": true,
+      "wiki": false,
+      "reviewable_id": 0,
+      "reviewable_score_count": 0,
+      "reviewable_score_pending_count": 0,
+      "post_url": "/t/julian-cab-consultor-y-desarrollador-sbo/16686/1",
+      "akismet_state": null,
+      "can_accept_answer": false,
+      "can_unaccept_answer": false,
+      "accepted_answer": false,
+      "topic_accepted_answer": false,
+      "can_vote": false
+    }
   }
 }
