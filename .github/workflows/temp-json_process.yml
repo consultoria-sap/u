@@ -2,9 +2,9 @@ name: Procesar JSONs de /temp/
 
 on:
   workflow_dispatch:  # Esto permite iniciar el flujo de trabajo manualmente
-  push:
-    paths:
-      - 'temp/*.json'
+  # push:
+  #  paths:
+  #    - 'temp/*.json'
 
 jobs:
   procesar-jsons:
