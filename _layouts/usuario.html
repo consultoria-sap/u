@@ -27,32 +27,20 @@ layout: default
       </span>
     {% endif %}
 
-{% comment %}
-    {% assign badges = user_data.badges %}
-      <ul class="user-badges">
-        {% for badge in badges %}
-          <li style="display: flex; align-items: center; margin-bottom: 0.3em;">
-            <span class="badge-emoji" style="font-size: 1.3em; margin-right: 0.5em;">
-              {% capture icon_emoji %}:{{ badge.icon }}:{% endcapture %}
-              {{ icon_emoji | markdownify | strip_newlines }}
-            </span>
-            <span class="badge-name" style="font-weight: 600;">{{ badge.name }}</span>
-          </li>
-        {% endfor %}
-        </ul>
-{% endcomment %}
+</div>
 
-    {% if user_data.topic and user_data.topic.post and user_data.topic.post.cooked %}
-      <div class="user-bio cooked-content" style="margin: 2rem 0 1.5rem; padding: 1.3rem 1.6rem; background: #fcfcfc; border-radius: 9px; box-shadow: 0 1px 4px #0001; font-size: 1.08em; color: #232323; line-height: 1.6;">
-        <h2 style="margin-top:0; color:#8e6500; font-size:1.13em; margin-bottom:0.7em; letter-spacing:.01em;">Acerca de @{{ user.username }}</h2>
+      {% if user_data.topic and user_data.topic.post and user_data.topic.post.cooked %}
+      <div class="user-bio cooked-content">
+        <h2>Acerca de @{{ user.username }}</h2>
         {{ user_data.topic.post.cooked | raw }}
       </div>
     {% endif %}
 
 
-    
-  </div>
-
+  <hr style="margin: 2rem 0 1.5rem;">
+  
+  Más información en <a href="{% if user.linkedin contains 'http' %}{{ user.linkedin }}{% else %}https://www.linkedin.com{{ user.linkedin }}{% endif %}" target="_blank" title="Linkein de {{ user.name | default: user.username }}" >🤝 Linkedin de {{ user.name | default: user.username }}</a>
+  
   <hr style="margin: 2rem 0 1.5rem;">
 
   <div class="user-stats" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
