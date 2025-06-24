@@ -2,3 +2,22 @@
 ---
 
 @import "{{ site.theme }}";
+
+.cooked-content {
+  background: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 1.5em 1.7em;
+  margin: 2em 0;
+  color: #232323;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 1.08em;
+}
+.cooked-content p {
+  margin-bottom: 1.1em;
+}
+.cooked-content hr {
+  border: 0;
+  border-top: 1px solid #ececec;
+  margin: 2em 0;
+}
