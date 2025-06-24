@@ -1,10 +1,8 @@
 const fs = require('fs');
 
-// Carpetas
 const TEMP_DIR = 'temp';
 const DATA_DIR = '_data';
 
-// Función recursiva para reemplazar {size} en avatar_template
 function replaceAvatarTemplate(obj) {
   if (Array.isArray(obj)) {
     obj.forEach(replaceAvatarTemplate);
@@ -19,7 +17,6 @@ function replaceAvatarTemplate(obj) {
   }
 }
 
-// Función para procesar cada par
 function procesarPar(base) {
   const file0 = `${TEMP_DIR}/${base}_0.json`;
   const file1 = `${TEMP_DIR}/${base}_1.json`;
@@ -34,7 +31,6 @@ function procesarPar(base) {
     datos0.badges = json0.badges || [];
     datos0.user = Array.isArray(json0.users) ? json0.users[0] : null;
 
-    // Recortar user_summary
     if (json0.user_summary) {
       const keys_0 = [
         "likes_given",
@@ -65,41 +61,42 @@ function procesarPar(base) {
     const raw1 = fs.readFileSync(file1, 'utf-8');
     const json1 = JSON.parse(raw1);
 
-    // Recortar post_stream.posts[0]
+    // Extraer llaves del root
+    const root_keys = [
+      "id",
+      "title",
+      "fancy_title",
+      "posts_count",
+      "created_at",
+      "views",
+      "reply_count",
+      "like_count",
+      "last_posted_at",
+      "slug",
+      "word_count"
+    ];
+    datos1.topic = {};
+    root_keys.forEach(k => {
+      if (k in json1) {
+        datos1.topic[k] = json1[k];
+      }
+    });
+
+    // Solo el primer post de post_stream.posts
     if (
       json1.post_stream &&
       Array.isArray(json1.post_stream.posts) &&
       json1.post_stream.posts[0]
     ) {
-      const post = json1.post_stream.posts[0];
-      const keys_1 = [
-        "id",
-        "title",
-        "fancy_title",
-        "posts_count",
-        "created_at",
-        "views",
-        "reply_count",
-        "like_count",
-        "last_posted_at",
-        "slug",
-        "word_count"
-      ];
-      datos1.post = {};
-      keys_1.forEach(k => {
-        if (k in post) {
-          datos1.post[k] = post[k];
-        }
-      });
+      datos1.topic.post = json1.post_stream.posts[0];
     }
+
   } catch (e) {
     console.error(`Error procesando ${file1}:`, e);
   }
 
   // Combinar resultados
   const resultado = { ...datos0, ...datos1 };
-
-  // Reemplazar {size} en avatar_template en todo el objeto resultado
   replaceAvatarTemplate(resultado);
 
   if (!fs.existsSync(DATA_DIR)){
