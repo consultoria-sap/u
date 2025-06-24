@@ -41,6 +41,15 @@ layout: default
         {% endfor %}
         </ul>
 {% endcomment %}
+
+    {% if user_data.topic and user_data.topic.post and user_data.topic.post.cooked %}
+      <div class="user-bio cooked-content" style="margin: 2rem 0 1.5rem; padding: 1.3rem 1.6rem; background: #fcfcfc; border-radius: 9px; box-shadow: 0 1px 4px #0001; font-size: 1.08em; color: #232323; line-height: 1.6;">
+        <h2 style="margin-top:0; color:#8e6500; font-size:1.13em; margin-bottom:0.7em; letter-spacing:.01em;">Acerca de @{{ user.username }}</h2>
+        {{ user_data.topic.post.cooked | raw }}
+      </div>
+    {% endif %}
+
+
     
   </div>
 
