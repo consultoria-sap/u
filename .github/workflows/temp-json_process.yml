@@ -26,5 +26,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git add _data/
           git rm temp/*.json || true
-          git commit -m "Procesados y volcados a _data los JSON de /temp" || echo "Nada para commitear"
+          git commit -m "Procesados de /temp" || echo "Nada para commitear"
           git push
