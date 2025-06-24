@@ -14,7 +14,7 @@ function replaceAvatarTemplate(obj) {
   } else if (obj && typeof obj === "object") {
     for (const key in obj) {
       if (key === "avatar_template" && typeof obj[key] === "string") {
-        obj[key] = obj[key].replace("{size}", "200");
+        obj[key] = obj[key].replace("{size}", "144");
       } else {
         replaceAvatarTemplate(obj[key]);
       }
