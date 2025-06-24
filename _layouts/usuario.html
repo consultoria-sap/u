@@ -6,12 +6,10 @@ layout: default
 {% assign user = user_data.users[0] %}
 {% assign stats = user_data.user_summary %}
 
-<!--<img src="{{ user.avatar_template | replace: '{size}', '120' }}">-->
-
 <div class="user-profile" style="max-width: 400px; margin: 2rem auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 2rem;">
   <div style="text-align: center;">
     <img
-      src="{{ user.avatar_template | replace: '{size}', '120' }}"
+      src="{{ user.avatar_template }}"
       alt="Avatar de {{ user.name | default: user.username }}"
       class="user-avatar"
       style="border-radius: 50%; border: 2px solid #eee; width: 120px; height: 120px; object-fit: cover; background: #f9f9f9;"
