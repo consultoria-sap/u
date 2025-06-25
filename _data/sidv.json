@@ -1,0 +1,367 @@
+{
+  "badges": [
+    {
+      "id": 4,
+      "name": "Líder",
+      "description": "<a href=\"http://foros.consultoria-sap.com/t/niveles-de-confianza/24#nivel4\">Líderes de la comunidad</a>.",
+      "grant_count": 5,
+      "allow_title": true,
+      "multiple_grant": false,
+      "icon": "user",
+      "image_url": null,
+      "listable": true,
+      "enabled": true,
+      "badge_grouping_id": 4,
+      "system": true,
+      "slug": "lider",
+      "manually_grantable": false,
+      "show_in_post_header": false,
+      "badge_type_id": 1
+    },
+    {
+      "id": 131,
+      "name": "Escritor VIP",
+      "description": "Al menos 500 artículos publicados en el sitio www.consultoria-sap.com ",
+      "grant_count": 1,
+      "allow_title": true,
+      "multiple_grant": false,
+      "icon": "file-lines",
+      "image_url": null,
+      "listable": false,
+      "enabled": true,
+      "badge_grouping_id": 2,
+      "system": false,
+      "slug": "escritor-vip",
+      "manually_grantable": true,
+      "show_in_post_header": false,
+      "badge_type_id": 1
+    },
+    {
+      "id": 112,
+      "name": "Crítico Experto",
+      "description": "Si llegas a éste nivel, eres un experto de las críticas para hacer crecer a la comunidad. Nos alegra de tener personas así! Llevas más de 50 temas en el Feedback! Sigue así!",
+      "grant_count": 1,
+      "allow_title": true,
+      "multiple_grant": true,
+      "icon": "comment",
+      "image_url": null,
+      "listable": true,
+      "enabled": true,
+      "badge_grouping_id": 2,
+      "system": false,
+      "slug": "critico-experto",
+      "manually_grantable": false,
+      "show_in_post_header": false,
+      "badge_type_id": 1
+    },
+    {
+      "id": 27,
+      "name": "Campeón",
+      "description": "Invitó a 5 miembros",
+      "grant_count": 1,
+      "allow_title": false,
+      "multiple_grant": false,
+      "icon": "user-plus",
+      "image_url": null,
+      "listable": true,
+      "enabled": true,
+      "badge_grouping_id": 2,
+      "system": true,
+      "slug": "campeon",
+      "manually_grantable": false,
+      "show_in_post_header": false,
+      "badge_type_id": 1
+    },
+    {
+      "id": 23,
+      "name": "Excelente contribución",
+      "description": "Compartió una publicación con 1000 visitantes únicos",
+      "grant_count": 2,
+      "allow_title": false,
+      "multiple_grant": true,
+      "icon": "share-nodes",
+      "image_url": null,
+      "listable": true,
+      "enabled": true,
+      "badge_grouping_id": 2,
+      "system": true,
+      "slug": "excelente-contribucion",
+      "manually_grantable": false,
+      "show_in_post_header": false,
+      "badge_type_id": 1
+    },
+    {
+      "id": 35,
+      "name": "Magnánimo",
+      "description": "Por usar 10 me gusta en un día 20 veces",
+      "grant_count": 3,
+      "allow_title": false,
+      "multiple_grant": false,
+      "icon": "heart",
+      "image_url": null,
+      "listable": true,
+      "enabled": true,
+      "badge_grouping_id": 2,
+      "system": true,
+      "slug": "magnanimo",
+      "manually_grantable": false,
+      "show_in_post_header": false,
+      "badge_type_id": 1
+    }
+  ],
+  "user": {
+    "id": 1,
+    "username": "SidV",
+    "name": "",
+    "avatar_template": "/user_avatar/foros.consultoria-sap.com/sidv/144/714_2.png",
+    "primary_group_name": "Suscriptores",
+    "flair_name": "Suscriptores",
+    "flair_url": "handshake-angle",
+    "flair_bg_color": "b3ffb3",
+    "flair_color": "006600",
+    "flair_group_id": 50,
+    "admin": true,
+    "trust_level": 4
+  },
+  "user_summary": {
+    "likes_given": 11496,
+    "likes_received": 8198,
+    "topics_entered": 31364,
+    "posts_read_count": 125141,
+    "days_visited": 2400,
+    "topic_count": 498,
+    "post_count": 19759,
+    "time_read": 6012781,
+    "recent_time_read": 18861,
+    "bookmark_count": 115,
+    "solved_count": 742
+  },
+  "topic": {
+    "id": 22,
+    "title": "SidV desde Argentina",
+    "fancy_title": "SidV desde Argentina",
+    "posts_count": 104,
+    "created_at": "2015-08-20T18:25:12.372Z",
+    "views": 13243,
+    "reply_count": 36,
+    "like_count": 181,
+    "last_posted_at": "2024-08-13T17:47:44.961Z",
+    "slug": "sidv-desde-argentina",
+    "word_count": 5249,
+    "post": {
+      "id": 30,
+      "name": "",
+      "username": "SidV",
+      "avatar_template": "/user_avatar/foros.consultoria-sap.com/sidv/144/714_2.png",
+      "created_at": "2015-08-20T18:25:12.475Z",
+      "cooked": "<p>Hola a todos!</p>\n<p>Llevo en SAP desde el año 2008. Soy de Argentina.<br>\nSoy Contador Público Nacional. Aunque la verdad he traicionado lo que he aprendido y de lo que me he recibido, pues ahora no hago NADA de balances, auditoría, etc.</p>\n<blockquote>\n<p><em>Sí si, nada que ver con el mundo de la informática.</em></p>\n</blockquote>\n<p>Llegué a SAP de “suerte”, de curiosidad digamos…<br>\nYo no sabía ni lo que era cuando una empresa de Argentina estaba buscando “Contadores Públicos y Administradores de Empresas” para capacitar. En aquel entonces yo estaba recibido de Contador, y trabajando como Auditor Externo… y me interesó esa propuesta… aunque no pagaban casi nada.</p>\n<p>Con el tiempo obtuve una certificación FI.<br>\nLuego hice la academia CO… y tengo algunos proyectos de implementación en la bolsa.<br>\nHe pasado por numerosas empresas, y he visto muchas cosas locas ajajajja  <img src=\"https://foros.consultoria-sap.com/images/emoji/twitter/blush.png?v=12\" title=\":blush:\" class=\"emoji\" alt=\":blush:\" loading=\"lazy\" width=\"20\" height=\"20\"></p>\n<p>Pero todo, es vida!</p>\n<p>Puedo afirmar que SAP es una pasión para mi, y me encanta todo lo que tenga que ver con ésta tecnología.</p>\n<p>Trabajé muchos años como consultor multi-módulo, es decir, me tiran de todo y yo resuelvo  <img src=\"https://foros.consultoria-sap.com/images/emoji/twitter/tongue.png?v=12\" title=\":tongue:\" class=\"emoji\" alt=\":tongue:\" loading=\"lazy\" width=\"20\" height=\"20\">  No es exactamente lo que buscaba, pero es lo que encontré.</p>\n<p>Desde 2019 hasta el presente, soy freelancer e independiente.<br>\nInversor, apasionado por las tecnologías y los negocios ya no hago consultoría de forma directa, sino que tengo una Pyme, y desarrollo negocios.</p>\n<ul>\n<li>Mi perfil es funcional. Aunque me defiendo bien en el campo técnico.</li>\n<li>Mi escudo SAP es FICO, pues son los módulos que más he especializado.</li>\n<li>Más puntualmente mi expertise corre dentro de SAP FM (BCS). Es el módulo de control presupuestario de SAP.</li>\n</ul>\n<p>Ahí tengo casi toda mi experiencia SAP, desde el 2008 hasta el 2019 tengo proyectos, evolutivos, y soporte en varias empresas de distintas industrias.</p>\n<blockquote>\n<p>Resumiendo:</p>\n<ul>\n<li>Título Académico: Contador Público Nacional</li>\n<li>Certificado en SAP FI (año 2008)</li>\n<li>Academia (sin certificado) de SAP CO (2008)</li>\n<li>Experiencia en: FM-BCS, FI, CO, MM, QM, SD, BASIS, ABAP (en ese orden).</li>\n<li>Cursé Tecnicatura Superior en Programación <img src=\"https://foros.consultoria-sap.com/images/emoji/twitter/stuck_out_tongue.png?v=12\" title=\":stuck_out_tongue:\" class=\"emoji\" alt=\":stuck_out_tongue:\" loading=\"lazy\" width=\"20\" height=\"20\">  (en el 2015)</li>\n</ul>\n</blockquote>\n<p>Actualmente me desempeño como TODOLOGO SAP.<br>\nEs un pecado, no se lo deseo a nadie. Si pueden, sean consultores de “un” módulo, máximo un par. <img src=\"https://foros.consultoria-sap.com/images/emoji/twitter/wink.png?v=12\" title=\":wink:\" class=\"emoji\" alt=\":wink:\" loading=\"lazy\" width=\"20\" height=\"20\"></p>\n<hr>\n<h2><a name=\"menciones-honorficas-1\" class=\"anchor\" href=\"#menciones-honorficas-1\"></a>Menciones Honoríficas <img src=\"https://foros.consultoria-sap.com/images/emoji/twitter/wink.png?v=12\" title=\":wink:\" class=\"emoji\" alt=\":wink:\" loading=\"lazy\" width=\"20\" height=\"20\"></h2>\n<ul>\n<li>Año 2018: <a href=\"https://www.consultoria-sap.com/2018/12/consultor-diciembre-sidv.html\" class=\"inline-onebox\">SidV, el consultor SAP de Diciembre | Consultoría SAP</a></li>\n</ul>\n<h2><a name=\"hitos-a-destacar-2\" class=\"anchor\" href=\"#hitos-a-destacar-2\"></a>Hitos a destacar</h2>\n<ul>\n<li>Me banearon de <span class=\"spoiler\">MundoSAP</span> después de ser su moderador más de 10 años. <em><a href=\"https://foros.consultoria-sap.com/t/sidv-desde-argentina/22/96\">Aquí la historia</a></em>.</li>\n</ul>\n<h2><a name=\"otros-proyectos-no-sap-3\" class=\"anchor\" href=\"#otros-proyectos-no-sap-3\"></a>Otros proyectos (no SAP)</h2>\n<p>Estoy participando en desarrollo <strong>open-source</strong>.</p>\n<ul>\n<li>\n<p>Pueden ver todo mi esfuerzo aquí: <a href=\"https://github.com/SidVal\" class=\"inline-onebox\">SidVal (SidV) · GitHub</a></p>\n</li>\n<li>\n<p>Colaboro de forma activa en <a href=\"http://www.LocademiaCripto.com\">www.LocademiaCripto.com</a></p>\n</li>\n<li>\n<p><img src=\"https://foros.consultoria-sap.com/images/emoji/twitter/exclamation.png?v=12\" title=\":exclamation:\" class=\"emoji\" alt=\":exclamation:\" loading=\"lazy\" width=\"20\" height=\"20\"> Quería destacar que he recibido la mención como miembro de la organización del <em><a href=\"https://github.com/ampproject\">proyecto AMP</a></em>, para mi es un honor. <img src=\"https://foros.consultoria-sap.com/images/emoji/twitter/blush.png?v=12\" title=\":blush:\" class=\"emoji\" alt=\":blush:\" loading=\"lazy\" width=\"20\" height=\"20\"></p>\n</li>\n<li>\n<p>También contribuyo en el proyecto Discourse, pero ahí no soy miembro oficial aún <img src=\"https://foros.consultoria-sap.com/images/emoji/twitter/roll_eyes.png?v=12\" title=\":roll_eyes:\" class=\"emoji\" alt=\":roll_eyes:\" loading=\"lazy\" width=\"20\" height=\"20\"></p>\n</li>\n</ul>\n<p>Un abrazo a todos y espero leer sus presentaciones en temas aparte!!!</p>\n<p>Pd: última actualización 18/02/2023 <img src=\"https://foros.consultoria-sap.com/images/emoji/twitter/tada.png?v=12\" title=\":tada:\" class=\"emoji\" alt=\":tada:\" loading=\"lazy\" width=\"20\" height=\"20\"></p>",
+      "post_number": 1,
+      "post_type": 1,
+      "posts_count": 104,
+      "updated_at": "2023-02-18T20:16:13.793Z",
+      "reply_count": 1,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "incoming_link_count": 296,
+      "reads": 1181,
+      "readers_count": 1180,
+      "score": 3047.2,
+      "yours": true,
+      "topic_id": 22,
+      "topic_slug": "sidv-desde-argentina",
+      "display_username": "",
+      "primary_group_name": "Suscriptores",
+      "flair_name": "Suscriptores",
+      "flair_url": "handshake-angle",
+      "flair_bg_color": "b3ffb3",
+      "flair_color": "006600",
+      "flair_group_id": 50,
+      "badges_granted": [],
+      "version": 10,
+      "can_edit": true,
+      "can_delete": false,
+      "can_recover": false,
+      "can_see_hidden_post": true,
+      "can_wiki": true,
+      "link_counts": [
+        {
+          "url": "https://github.com/SidVal",
+          "internal": false,
+          "reflection": false,
+          "title": "SidVal (SidV) · GitHub",
+          "clicks": 71
+        },
+        {
+          "url": "https://github.com/ampproject",
+          "internal": false,
+          "reflection": false,
+          "title": "AMP Project · GitHub",
+          "clicks": 18
+        },
+        {
+          "url": "https://www.consultoria-sap.com/2018/12/consultor-diciembre-sidv.html",
+          "internal": false,
+          "reflection": false,
+          "title": "SidV, el consultor SAP de Diciembre | Ser Consultor SAP",
+          "clicks": 10
+        },
+        {
+          "url": "http://www.LocademiaCripto.com",
+          "internal": false,
+          "reflection": false,
+          "title": "Locademia Cripto",
+          "clicks": 1
+        },
+        {
+          "url": "http://foros.consultoria-sap.com/t/oportunidad-de-pasar-desde-erp-a-b1/3517",
+          "internal": true,
+          "reflection": true,
+          "title": "Oportunidad de pasar desde ERP a B1",
+          "clicks": 2
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/sap-espana-curso-homologado-o-clandestino/13148/9",
+          "internal": true,
+          "reflection": true,
+          "title": "SAP España ¿curso homologado o \"clandestino\"?",
+          "clicks": 0
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/nuevo-usuario-de-la-comunidad-sap-dan/30483/10",
+          "internal": true,
+          "reflection": true,
+          "title": "Nuevo usuario de la comunidad SAP: Dan",
+          "clicks": 0
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/pros-y-contras-de-ser-consultor-funcional/32209/6",
+          "internal": true,
+          "reflection": true,
+          "title": "Pros y Contras de ser Consultor Funcional",
+          "clicks": 0
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/uno-nunca-deja-de-aprender-con-sap/12278/5",
+          "internal": true,
+          "reflection": true,
+          "title": "Uno nunca deja de aprender con SAP",
+          "clicks": 0
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/software-factory-abap-remota/1989/15",
+          "internal": true,
+          "reflection": true,
+          "title": "Software Factory ABAP (remota)",
+          "clicks": 0
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/presentacion-alejandro-mtz-mm-wm-pp-dp-snp/3449/4",
+          "internal": true,
+          "reflection": true,
+          "title": "Presentacion Alejandro Mtz. MM, WM, PP, DP, SNP",
+          "clicks": 0
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/soy-daniel-desde-cordoba-argentina/84",
+          "internal": true,
+          "reflection": true,
+          "title": "Soy Daniel desde Córdoba, Argentina",
+          "clicks": 0
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/saludos-soy-toniv-desde-barcelona/67365/2",
+          "internal": true,
+          "reflection": true,
+          "title": "Saludos soy toniv desde Barcelona",
+          "clicks": 0
+        },
+        {
+          "url": "http://foros.consultoria-sap.com/t/mi-presentacion-de-bienvenida-a-foros-sap/19682/5",
+          "internal": true,
+          "reflection": true,
+          "title": "Johel: Presentación de Bienvenida a foros SAP",
+          "clicks": 0
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/presentacion-soy-jano-gracias-por-recibirme/46902/4",
+          "internal": true,
+          "reflection": true,
+          "title": "Presentacion - Soy Jano, gracias por recibirme",
+          "clicks": 0
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/angeles-desde-mexico/46717/5",
+          "internal": true,
+          "reflection": true,
+          "title": "Angeles desde México",
+          "clicks": 0
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/nuevo-en-el-foro-pero-no-en-sap/19564/2",
+          "internal": true,
+          "reflection": true,
+          "title": "Nuevo en el foro pero no en SAP",
+          "clicks": 0
+        },
+        {
+          "url": "https://foros.consultoria-sap.com/t/buenas-saperos/19501/4",
+          "internal": true,
+          "reflection": true,
+          "title": "Buenas, saperos!",
+          "clicks": 0
+        }
+      ],
+      "read": true,
+      "user_title": "Habitual",
+      "title_is_group": false,
+      "bookmarked": false,
+      "actions_summary": [
+        {
+          "id": 2,
+          "count": 85
+        },
+        {
+          "id": 3,
+          "can_act": true
+        },
+        {
+          "id": 4,
+          "can_act": true
+        },
+        {
+          "id": 8,
+          "can_act": true
+        },
+        {
+          "id": 10,
+          "can_act": true
+        },
+        {
+          "id": 7,
+          "can_act": true
+        }
+      ],
+      "moderator": false,
+      "admin": true,
+      "staff": true,
+      "user_id": 1,
+      "hidden": false,
+      "trust_level": 4,
+      "deleted_at": null,
+      "user_deleted": false,
+      "edit_reason": null,
+      "can_view_edit_history": true,
+      "wiki": false,
+      "reviewable_id": 0,
+      "reviewable_score_count": 0,
+      "reviewable_score_pending_count": 0,
+      "post_url": "/t/sidv-desde-argentina/22/1",
+      "akismet_state": null,
+      "can_accept_answer": false,
+      "can_unaccept_answer": false,
+      "accepted_answer": false,
+      "topic_accepted_answer": false,
+      "can_vote": false
+    }
+  }
+}
