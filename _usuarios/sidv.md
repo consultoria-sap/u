@@ -1,5 +1,5 @@
 ---
-title: sidv
+title: SidV
 tags: perfil
 linkedin: null
 permalink: /sidv/
