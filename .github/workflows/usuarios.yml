@@ -27,7 +27,6 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git add _data/
-          git rm temp/*.json || true
+          git add _usuarios/
           git commit -m "Procesados del _data" || echo "Nada para commitear"
           git push
