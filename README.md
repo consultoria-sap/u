@@ -1,6 +1,5 @@
 ---
 title: Master SAPers
-layout: page
 ---
 
 ## Usuarios
