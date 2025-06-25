@@ -8,6 +8,12 @@ google_analytics:
 # Theme
 remote_theme: pages-themes/minimal@v0.2.0
 
+# Collections
+collections:
+  usuarios:
+    output: true
+    permalink: /:path/
+
 # Plugins
 plugins:
 - jekyll-remote-theme
