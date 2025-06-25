@@ -1,4 +1,4 @@
-name: Procesar JSONs de /temp/
+name: Temporal
 
 on:
   workflow_dispatch:  # Esto permite iniciar el flujo de trabajo manualmente
