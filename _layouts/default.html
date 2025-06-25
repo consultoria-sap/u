@@ -24,7 +24,7 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         {% for usuario in site.usuarios %}
-          <p><a href="{{ usuario.url }}">{{ usuario.title }}</a></p>
+          <p><a href="{{ usuario.url | relative_url }}">{{ usuario.title }}</a></p>
         {% endfor %}
 
         
