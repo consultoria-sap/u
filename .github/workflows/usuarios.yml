@@ -1,19 +1,17 @@
-name: Procesar Usuarios
+name: Usuarios
 
 on:
   workflow_dispatch:  # Esto permite iniciar el flujo de trabajo manualmente
-  push:
-   paths:
-     - '_data/*.json'
-
+  workflow_run:
+    workflows: ["Temporal"]
+    types:
+      - completed
+  
 jobs:
   procesar-jsons:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Esperar 10 seg
-        run: sleep 10
 
       - name: Instalar Node.js
         uses: actions/setup-node@v4
