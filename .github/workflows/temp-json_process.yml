@@ -12,6 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Esperar 1 minuto
+        run: sleep 60
+
       - name: Instalar Node.js
         uses: actions/setup-node@v4
         with:
