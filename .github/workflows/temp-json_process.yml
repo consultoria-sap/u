@@ -4,7 +4,7 @@ on:
   workflow_dispatch:  # Esto permite iniciar el flujo de trabajo manualmente
   push:
    paths:
-     - 'temp/*.json'
+     - 'temp/*1.json'
 
 jobs:
   procesar-jsons:
