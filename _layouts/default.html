@@ -23,9 +23,11 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
+        {% for usuario in site.usuarios %}
+          <p><a href="{{ usuario.url }}">{{ usuario.title }}</a></p>
+        {% endfor %}
+
+        
       </header>
       <section>
 
