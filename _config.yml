@@ -1,6 +1,6 @@
 title: Usuarios
 logo: /assets/img/logo.png
-description: Bla bla bla (a  editar despues)
+description: Directorio de Usuarios y Consultores SAP
 lang: es
 show_downloads: false
 google_analytics:
@@ -8,11 +8,19 @@ google_analytics:
 # Theme
 remote_theme: pages-themes/minimal@v0.2.0
 
+# Exclusiones
+exclude:
+  - /temp/readme.md
+  - /_data/readme.md
+
 # Collections
 collections:
   usuarios:
     output: true
     permalink: /:path/
+
+
+# Otras configuraciones que no tocaré regularmente
 
 # Plugins
 plugins:
@@ -43,11 +51,6 @@ kramdown:
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
-
-exclude:
-  - README.md
-  - /temp/readme.md
-  - /_data/readme.md
 
 # ini - Los siguientes no pueden cambiarse -ini
 lsi: false
