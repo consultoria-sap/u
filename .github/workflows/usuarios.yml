@@ -1,0 +1,33 @@
+name: Procesar Usuarios
+
+on:
+  workflow_dispatch:  # Esto permite iniciar el flujo de trabajo manualmente
+  push:
+   paths:
+     - '_data/*.json'
+
+jobs:
+  procesar-jsons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Esperar 10 seg
+        run: sleep 10
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Ejecutar usuarios.js
+        run: node assets/js/usuarios.js
+
+      - name: Commit de resultados en _data
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add _data/
+          git rm temp/*.json || true
+          git commit -m "Procesados del _data" || echo "Nada para commitear"
+          git push
