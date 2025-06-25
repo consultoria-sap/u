@@ -14,6 +14,7 @@ remote_theme: pages-themes/minimal@v0.2.0
 exclude:
   - /temp/readme.md
   - /_data/readme.md
+  - readme.md
 
 # Collections
 collections:
