@@ -1,6 +1,8 @@
 title: Master SAPers
-logo: /assets/img/logo.png
 description: Directorio de Usuarios y Consultores SAP
+logo: /assets/img/logo.png
+baseurl: "/u"
+url: "https://consultoria-sap.github.io"
 lang: es
 show_downloads: false
 google_analytics:
