@@ -1,5 +1,10 @@
-# Usuarios
+---
+title: Master SAPers
+layout: page
+---
+
+## Usuarios
 
 > Directorio de Usuarios 
 
-Este directorio está en etapa super-beta
+Leer [debate para entender cómo funciona y cómo aparecer](https://foros.consultoria-sap.com/t/directorio-de-usuarios-sap-sapers/67579) en el directorio.
