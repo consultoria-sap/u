@@ -23,9 +23,64 @@
 }
 .cooked-content h2 {margin-top:0; color:#8e6500; font-size:1.13em; margin-bottom:0.7em; letter-spacing:.01em;}
 
-.user-index-list {display: flex; flex-direction: column; gap: 0.8em; margin-bottom: 2em;}
-.user-link {font-weight:500; font-size:1.08em; color:#8e6500; text-decoration:none;}
-.see-all {color:#2366d1; font-weight:600; text-decoration:none;}
+.user-index-card {
+  background: #fdf7e7;
+  border-radius: 15px;
+  box-shadow: 0 4px 22px #c2942912, 0 1.5px 6px #ffecd181;
+  padding: 2em 2.2em 1.2em 2.2em;
+  max-width: 410px;
+  margin: 2.5em auto 2em auto;
+  border: 1.5px solid #f3e1be;
+}
+
+.user-index-title {
+  font-size: 1.19em;
+  font-weight: 700;
+  color: #8e6500;
+  margin-bottom: 1.2em;
+  letter-spacing: 0.02em;
+}
+
+.user-index-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.05em;
+}
+
+.user-link {
+  display: block;
+  font-weight: 600;
+  font-size: 1.11em;
+  color: #4c3d21;
+  text-decoration: none;
+  background: #fff9e6;
+  border-radius: 9px;
+  padding: 0.72em 1.1em;
+  transition: background 0.13s, box-shadow 0.13s, color 0.13s, transform 0.13s;
+  box-shadow: 0 1px 4px #f3e1be66;
+  letter-spacing: 0.01em;
+}
+
+.user-link:hover {
+  background: #f6e1a4;
+  color: #8e6500;
+  transform: translateY(-2px) scale(1.045);
+  box-shadow: 0 4px 20px #f6e1a488;
+}
+
+.see-all {
+  display: inline-block;
+  margin-top: 1.7em;
+  color: #2366d1;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.05em;
+  letter-spacing: .01em;
+}
+.see-all:hover {
+  color: #174887;
+  text-decoration: underline;
+}
 
 .usuarios-grid {
   display: grid;
