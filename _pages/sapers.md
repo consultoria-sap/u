@@ -4,10 +4,22 @@ permalink: /sapers/
 layout: page
 ---
 
-# Directorio de Usuarios
+<h1 style="margin-bottom: 1.5em;">Directorio de Usuarios</h1>
 
-<ul>
+<div class="usuarios-grid">
   {% for usuario in site.usuarios %}
-    <li><a href="{{ usuario.url | relative_url }}">{{ usuario.title }}</a></li>
+    <a href="{{ usuario.url | relative_url }}" class="usuario-card">
+      {% if usuario.avatar_template %}
+        <img src="{% if usuario.avatar_template contains 'http' %}{{ usuario.avatar_template }}{% else %}https://foros.consultoria-sap.com{{ usuario.avatar_template }}{% endif %}" alt="Avatar {{ usuario.title }}" />
+      {% endif %}
+      <div class="usuario-nombre">{{ usuario.title }}</div>
+      {% if usuario.tags %}
+        <div class="usuario-tags">
+          {% for tag in usuario.tags %}
+            <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </a>
   {% endfor %}
-</ul>
+</div>
