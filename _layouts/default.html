@@ -23,19 +23,22 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
+      <div class="user-index-card">
+        <div class="user-index-title">Consultores destacados</div>
         <div class="user-index-list">
-        {% for usuario in site.usuarios limit:1 %}
-          <a href="{{ usuario.url | relative_url }}" class="user-link">
-            {{ usuario.title }}
+          {% for usuario in site.usuarios limit:1 %}
+            <a href="{{ usuario.url | relative_url }}" class="user-link">
+              <span class="user-link-name">{{ usuario.title }}</span>
+            </a>
+          {% endfor %}
+        </div>
+        {% if site.usuarios.size > 1 %}
+          <a href="{{ '/sapers/' | relative_url }}" class="see-all">
+            Ver todos los usuarios &rarr;
           </a>
-        {% endfor %}
+        {% endif %}
       </div>
-      
-      {% if site.usuarios.size > 1 %}
-        <a href="{{ '/sapers/' | relative_url }}" class="see-all">
-          Ver todos los usuarios &rarr;
-        </a>
-      {% endif %}
+
 
         
       </header>
@@ -45,6 +48,7 @@
 
       </section>
       <footer>
+        <br /><br />
         {% if site.github.is_project_page %}
         <p><small>Este proyecto es de <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></small></p>
         {% endif %}
