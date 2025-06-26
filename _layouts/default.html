@@ -23,10 +23,6 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        {% for usuario in site.usuarios %}
-          <p><a href="{{ usuario.url | relative_url }}">{{ usuario.title }}</a></p>
-        {% endfor %}
-
         <div class="user-index-list">
         {% for usuario in site.usuarios limit:1 %}
           <a href="{{ usuario.url | relative_url }}" class="user-link">
