@@ -3,19 +3,6 @@
 
 @import "{{ site.theme }}";
 
-footer {
-    width: 100%;
-    left: 0;
-    position: fixed;
-    bottom: 0;
-    background: #fffbe5; /* o tu color de fondo */
-    box-shadow: 0 -2px 14px #0001;
-    padding: 1.1em 0 1em 0;
-    text-align: center;
-    z-index: 90;
-}
-
-
 .cooked-content {
   background: #fcfcfc;
   border-radius: 10px;
