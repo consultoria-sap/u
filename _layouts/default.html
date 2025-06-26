@@ -27,6 +27,20 @@
           <p><a href="{{ usuario.url | relative_url }}">{{ usuario.title }}</a></p>
         {% endfor %}
 
+        <div class="user-index-list">
+        {% for usuario in site.usuarios limit:1 %}
+          <a href="{{ usuario.url | relative_url }}" class="user-link">
+            {{ usuario.title }}
+          </a>
+        {% endfor %}
+      </div>
+      
+      {% if site.usuarios.size > 1 %}
+        <a href="{{ '/directorio/' | relative_url }}" class="see-all">
+          Ver todos los usuarios &rarr;
+        </a>
+      {% endif %}
+
         
       </header>
       <section>
