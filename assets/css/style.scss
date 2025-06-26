@@ -3,6 +3,19 @@
 
 @import "{{ site.theme }}";
 
+footer {
+    width: 100%;
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    background: #fffbe5; /* o tu color de fondo */
+    box-shadow: 0 -2px 14px #0001;
+    padding: 1.1em 0 1em 0;
+    text-align: center;
+    z-index: 90;
+}
+
+
 .cooked-content {
   background: #fcfcfc;
   border-radius: 10px;
@@ -24,7 +37,7 @@
 .cooked-content h2 {margin-top:0; color:#8e6500; font-size:1.13em; margin-bottom:0.7em; letter-spacing:.01em;}
 
 .user-index-card {
-  background: #fdf7e7;
+  background: #effde7;
   border-radius: 15px;
   box-shadow: 0 4px 22px #c2942912, 0 1.5px 6px #ffecd181;
   padding: 2em 2.2em 1.2em 2.2em;
@@ -62,7 +75,7 @@
 }
 
 .user-link:hover {
-  background: #f6e1a4;
+  background: #effde7;
   color: #8e6500;
   transform: translateY(-2px) scale(1.045);
   box-shadow: 0 4px 20px #f6e1a488;
