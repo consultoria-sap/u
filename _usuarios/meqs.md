@@ -1,5 +1,5 @@
 ---
-title: meqs
+title: Meqs
 date: 2025-06-28
 tags: Business One
 linkedin: null
