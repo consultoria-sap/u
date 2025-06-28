@@ -8,9 +8,18 @@ layout: page
 
 <div class="usuarios-grid">
   {% for usuario in site.usuarios %}
+    {% assign user_data = site.data[usuario.datafile] %}
+    {% if user_data.user %}
+      {% assign user = user_data.user %}
+    {% elsif user_data.users %}
+      {% assign user = user_data.users[0] %}
+    {% else %}
+      {% assign user = nil %}
+    {% endif %}
+
     <a href="{{ usuario.url | relative_url }}" class="usuario-card">
-      {% if usuario.avatar_template %}
-        <img src="{% if usuario.avatar_template contains 'http' %}{{ usuario.avatar_template }}{% else %}https://foros.consultoria-sap.com{{ usuario.avatar_template }}{% endif %}" alt="Avatar {{ usuario.title }}" />
+      {% if user and user.avatar_template %}
+        <img src="{% if user.avatar_template contains 'http' %}{{ user.avatar_template }}{% else %}https://foros.consultoria-sap.com{{ user.avatar_template }}{% endif %}" alt="Avatar {{ usuario.title }}" />
       {% endif %}
       <div class="usuario-nombre">{{ usuario.title }}</div>
       {% if usuario.tags %}
