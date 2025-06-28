@@ -23,11 +23,10 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-      {% assign usuarios_ordenados = site.usuarios | sort: "order" %}
       <div class="user-index-card">
         <div class="user-index-title">Top 3</div>
         <div class="user-index-list">
-          {% for usuario in usuarios_ordenados limit:3 %}
+          {% for usuario in site.usuarios limit:3 %}
             <a href="{{ usuario.url | relative_url }}" class="user-link">
               <span class="user-link-name">{{ usuario.title }}</span>
             </a>
@@ -39,7 +38,6 @@
           </a>
         {% endif %}
       </div>
-
 
         
       </header>
