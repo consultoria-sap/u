@@ -23,16 +23,17 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
+      {% assign usuarios_ordenados = site.usuarios | sort: "order" %}
       <div class="user-index-card">
         <div class="user-index-title">Consultores destacados</div>
         <div class="user-index-list">
-          {% for usuario in site.usuarios limit:1 %}
+          {% for usuario in usuarios_ordenados limit:3 %}
             <a href="{{ usuario.url | relative_url }}" class="user-link">
               <span class="user-link-name">{{ usuario.title }}</span>
             </a>
           {% endfor %}
         </div>
-        {% if site.usuarios.size > 1 %}
+        {% if site.usuarios.size > 3 %}
           <a href="{{ '/sapers/' | relative_url }}" class="see-all">
             Ver todos los usuarios &rarr;
           </a>
