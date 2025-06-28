@@ -27,9 +27,12 @@ if (faltantes.length === 0) {
 
 // 4. Crear los archivos faltantes con el formato pedido
 faltantes.forEach(name => {
+  const now = new Date();
+  const fecha = now.toISOString().slice(0,10); // "2025-12-03"
   const mdContent = 
 `---
 title: ${name}
+date: ${fecha}
 tags: perfil
 linkedin: null
 permalink: /${name}/
@@ -37,7 +40,6 @@ layout: usuario
 username: ${name}
 datafile: ${name}
 ---
-
 .  
 `;
   const filePath = path.join(USUARIOS_DIR, `${name}.md`);
