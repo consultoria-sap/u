@@ -1,7 +1,7 @@
 ---
 title: Meqs
 date: 2025-06-28
-tags: Business One
+tags: B1
 linkedin: null
 permalink: /meqs/
 layout: usuario
