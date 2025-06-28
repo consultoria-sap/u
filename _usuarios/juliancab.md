@@ -1,6 +1,6 @@
 ---
 title: JulianCAB 
-tags: perfil
+tags: Business One
 linkedin: /in/julian-cab-canul-85abb0363/
 permalink: /juliancab/
 layout: usuario
