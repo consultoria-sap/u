@@ -21,8 +21,7 @@ collections:
   usuarios:
     output: true
     permalink: /:path/
-    order:
-      - sidv.md
+    sort_by: order
 
 
 # Otras configuraciones que no tocaré regularmente
