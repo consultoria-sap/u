@@ -22,7 +22,7 @@ collections:
     output: true
     permalink: /:path/
     order:
-      sidv.md
+      - sidv.md
 
 
 # Otras configuraciones que no tocaré regularmente
