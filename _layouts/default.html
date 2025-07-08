@@ -24,19 +24,16 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
       <div class="user-index-card">
-        <div class="user-index-title">Top 3</div>
-        <div class="user-index-list">
-          {% for usuario in site.usuarios limit:3 %}
-            <a href="{{ usuario.url | relative_url }}" class="user-link">
-              <span class="user-link-name">{{ usuario.title }}</span>
-            </a>
-          {% endfor %}
+        <div class="user-index-title">3 Randoms</div>
+
+        <div id="usuarios-todos" style="display:none">
+        {% for usuario in site.usuarios %}
+        <a href="{{ usuario.url | relative_url }}" class="user-link">{{ usuario.title }}</a>
+        {% endfor %}
         </div>
-        {% if site.usuarios.size > 3 %}
-          <a href="{{ '/sapers/' | relative_url }}" class="see-all">
-            Ver todos los usuarios &rarr;
-          </a>
-        {% endif %}
+        
+        <div class="user-index-list" id="user-index-list"></div>
+
       </div>
 
         
@@ -49,5 +46,21 @@
 
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        // Tomar todos los enlaces de usuarios
+        var allUsers = Array.from(document.querySelectorAll("#usuarios-todos .user-link"));
+        // Mezclar (shuffle)
+        for (let i = allUsers.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [allUsers[i], allUsers[j]] = [allUsers[j], allUsers[i]];
+        }
+        // Tomar los primeros 3
+        var selected = allUsers.slice(0,3);
+        // Renderizarlos en el bloque visible
+        var target = document.getElementById("user-index-list");
+        selected.forEach(el => target.appendChild(el.cloneNode(true)));
+      });
+    </script>
   </body>
 </html>
