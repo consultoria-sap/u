@@ -64,7 +64,7 @@
 .user-link:hover {
   background: #effde7;
   color: #8e6500;
-  transform: translateY(-2px) scale(1.045);
+  transform: translateY(-2px) scale(1.03);
   box-shadow: 0 4px 20px #f6e1a488;
 }
 
@@ -142,5 +142,33 @@
   font-weight: 500;
   letter-spacing: .01em;
   display: inline-block;
+}
+
+.site-logo {
+  max-width: 90px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.6em auto;
+  opacity: 0.92;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.2em;
+  padding-bottom: 1.6em;
+  border-bottom: 1px solid #f0e7d2;
+  background: linear-gradient(
+    to bottom,
+    #fdfcf8 0%,
+    #ffffff 100%
+  );
+}
+
+header p {
+  font-style: italic;
+  margin-top: 0.4em;
+  font-size: 0.95em;
+  color: #6a5b3a;
+  line-height: 1.4;
 }
 
