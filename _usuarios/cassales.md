@@ -1,7 +1,7 @@
 ---
 title: cassales
 date: 2026-01-20
-tags: perfil
+tags: B1
 linkedin: null
 permalink: /cassales/
 layout: usuario
