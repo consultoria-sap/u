@@ -15,10 +15,10 @@
   <body>
     <div class="wrapper">
       <header>
-        <h2><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h2>
+        <!-- <h2><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h2> -->
 
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img src="{{site.logo | relative_url}}" alt="Logo" class="site-logo" />
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -59,7 +59,7 @@
           [allUsers[i], allUsers[j]] = [allUsers[j], allUsers[i]];
         }
         // Tomar los primeros 3
-        var selected = allUsers.slice(0,3);
+        var selected = allUsers.slice(0, Math.min(3, allUsers.length));
         // Renderizarlos en el bloque visible
         var target = document.getElementById("user-index-list");
         selected.forEach(el => target.appendChild(el.cloneNode(true)));
