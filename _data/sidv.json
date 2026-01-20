@@ -124,17 +124,17 @@
     "trust_level": 4
   },
   "user_summary": {
-    "likes_given": 11496,
-    "likes_received": 8198,
-    "topics_entered": 31364,
-    "posts_read_count": 125141,
-    "days_visited": 2400,
-    "topic_count": 498,
-    "post_count": 19759,
-    "time_read": 6012781,
-    "recent_time_read": 18861,
+    "likes_given": 11569,
+    "likes_received": 8217,
+    "topics_entered": 31711,
+    "posts_read_count": 126965,
+    "days_visited": 2518,
+    "topic_count": 518,
+    "post_count": 19879,
+    "time_read": 6092121,
+    "recent_time_read": 20942,
     "bookmark_count": 115,
-    "solved_count": 742
+    "solved_count": 790
   },
   "topic": {
     "id": 22,
@@ -363,5 +363,6 @@
       "topic_accepted_answer": false,
       "can_vote": false
     }
-  }
+  },
+  "updated_at": "2026-01-20T17:32:03.759Z"
 }
