@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Master SAPers
-date: 2025-06-20
+date: 2026-01-20
 ---
 
-<h1 style="margin-bottom: 1.5em;">Directorio de Usuarios</h1>
+<h1>Directorio de Usuarios</h1>
 
 <div class="usuarios-grid">
   {% for usuario in site.usuarios %}
