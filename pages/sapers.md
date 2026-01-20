@@ -1,5 +1,4 @@
 ---
-title: Sapers
 permalink: /sapers/
 layout: page
 date: 2026-01-20
