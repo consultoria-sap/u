@@ -1,5 +1,5 @@
 {% assign meses = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," %}
-{% assign fecha = include.date | default: page.date | date: "%-d|%-m|%Y" | split: "|" %}
+{% assign fecha = page.date | default: site.time | date: "%-d|%-m|%Y" | split: "|" %}
 {% assign dia = fecha[0] %}
 {% assign mes = fecha[1] | minus: 1 %}
 {% assign anio = fecha[2] %}
