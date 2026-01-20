@@ -2,7 +2,7 @@
 title: Sapers
 permalink: /sapers/
 layout: page
-date: 2025-06-20
+date: 2026-01-20
 ---
 
 <h1 style="margin-bottom: 1.5em;">Directorio de Usuarios</h1>
