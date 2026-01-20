@@ -172,3 +172,28 @@ header p {
   line-height: 1.4;
 }
 
+h1 + p,
+h1 + .usuarios-grid,
+h1 + .user-index-card {
+  margin-top: 0.6em;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8e6500;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: #f3e1be;
+  margin-top: 0.35em;
+  border-radius: 2px;
+}
+
